@@ -328,7 +328,6 @@ main {
 
   .main-text > p {
     font-size: 0.9rem;
-    text-align: justify;
   }
 
   .main-img {
@@ -348,7 +347,7 @@ main {
   }
 
   .main-text > button {
-    font-size: 10.5px;
+    font-size: 10px;
     padding: 8px 1rem;
   }
 }
@@ -451,7 +450,6 @@ main {
     grid-template-columns: unset;
     grid-template-rows: auto;
     place-items: center;
-    text-align: justify;
   }
 
   .about-container > article h3 {
@@ -460,7 +458,6 @@ main {
 
   .about-container > article p {
     font-size: 0.9rem;
-    text-align: justify;
   }
 }
 
