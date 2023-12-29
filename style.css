@@ -346,6 +346,11 @@ main {
   .main-img {
     height: 230px;
   }
+
+  .main-text > button {
+    font-size: 10.5px;
+    padding: 8px 1rem;
+  }
 }
 
 /* SHOP INFO PAGE */
