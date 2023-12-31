@@ -262,7 +262,7 @@ header {
 }
 
 /* MOBILE SCREEN HEADER MENU */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 650px) {
   .logo > h1 {
     font-size: 1.3rem;
     margin-top: 13px;
@@ -281,6 +281,7 @@ header {
 /* MAIN SECTION */
 main {
   margin-top: 4rem;
+  margin-bottom: 4rem;
   width: 100vw;
 }
 
@@ -369,7 +370,8 @@ main {
 /* TABLET SCREEN MAIN SECTION */
 @media screen and (max-width: 1000px) {
   main {
-    margin-top: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
   }
 
   .main-page {
@@ -392,7 +394,7 @@ main {
 }
 
 /* MOBILE SCREEN MAIN SECTION */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 650px) {
   .main-page {
     gap: initial;
   }
@@ -446,8 +448,8 @@ main {
   color: var(--color3);
 }
 
-/* MOBILE SCREEN SHOP INFO PAGE */
-@media screen and (max-width: 500px) {
+/* TABLET SCREEN SHOP INFO PAGE */
+@media screen and (max-width: 1000px) {
   .shop-info {
     -ms-grid-columns: unset;
     grid-template-columns: unset;
@@ -547,7 +549,7 @@ main {
 }
 
 /* MOBILE SCREEN ABOUT PAGE */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 650px) {
   .about {
     padding: 4rem 0;
   }
@@ -558,5 +560,81 @@ main {
 
   .about-container > figure img {
     height: 190px;
+  }
+}
+
+/* SHOP PAGE */
+.shop {
+  margin: 3rem auto;
+}
+
+.shop > h3 {
+  text-align: center;
+  color: var(--color2);
+}
+
+.shop > p {
+  text-align: center;
+  color: var(--color1);
+}
+
+.product {
+  width: 90vw;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin: 3rem auto;
+  color: var(--color2);
+  gap: 4rem;
+}
+
+.product-col {
+  justify-self: center;
+  line-height: 2em;
+  text-align: center;
+  letter-spacing: 1px;
+  width: 90%;
+}
+
+.product-col > img {
+  border-radius: 20px;
+}
+
+.product-col > h4 {
+  font-weight: 100;
+}
+
+.product-col > p {
+  font-size: 14px;
+  color: var(--color1);
+}
+
+.product-col > p:nth-child(4) {
+  font-size: 12px;
+  color: var(--color3);
+  text-align: end;
+}
+
+.product-col > a {
+  font-size: 12px;
+  color: var(--color2);
+  text-align: end;
+  border: 2px solid var(--color2);
+  border-radius: 20px;
+  padding: 0.4em 2em;
+  transition: 0.2s ease-in-out;
+}
+
+.product-col > a:hover {
+  background-color: var(--color3);
+  border: transparent;
+  box-shadow: 0 0 10px var(--color2);
+  color: var(--color1);
+}
+
+/* MOBILE SCREEN SHOP PAGE */
+@media screen and (max-width: 650px) {
+  .product {
+    grid-template-columns: unset;
+    grid-template-rows: auto;
   }
 }
