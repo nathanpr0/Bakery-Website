@@ -317,6 +317,27 @@ main {
   line-height: 2rem;
 }
 
+.main-text > a {
+  border-radius: 25px;
+  background-color: var(--bg4);
+  color: var(--color2);
+  padding: 13px 1.5rem;
+  font-size: 12px;
+  -webkit-transition: 0.2s ease-in-out;
+  -o-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.main-text > a:hover {
+  background-color: var(--bg1);
+  -webkit-box-shadow: 0 0 5px 2px var(--color2);
+  box-shadow: 0 0 5px 2px var(--color2);
+}
+
+.explore {
+  margin-right: 5px;
+}
+
 .main-img {
   -webkit-clip-path: polygon(34% 1%, 100% 32%, 100% 84%, 34% 100%, 0% 43%);
   clip-path: polygon(34% 1%, 100% 32%, 100% 84%, 34% 100%, 0% 43%);
@@ -332,41 +353,6 @@ main {
   transform: translateX(12px) translateY(10px);
   z-index: 1;
   height: inherit;
-}
-
-.explore {
-  background-color: var(--bg4);
-  margin-right: 5px;
-  color: var(--color2);
-  padding: 13px 1.5rem;
-  border-radius: 25px;
-  font-size: 12px;
-  -webkit-transition: 0.2s ease-in-out;
-  -o-transition: 0.2s ease-in-out;
-  transition: 0.2s ease-in-out;
-}
-
-.order {
-  border-radius: 25px;
-  background-color: var(--bg4);
-  color: var(--color2);
-  padding: 13px 1.5rem;
-  font-size: 12px;
-  -webkit-transition: 0.2s ease-in-out;
-  -o-transition: 0.2s ease-in-out;
-  transition: 0.2s ease-in-out;
-}
-
-.explore:hover {
-  background-color: var(--bg1);
-  -webkit-box-shadow: 0 0 5px 2px var(--color2);
-  box-shadow: 0 0 5px 2px var(--color2);
-}
-
-.order:hover {
-  background-color: var(--bg1);
-  -webkit-box-shadow: 0 0 5px 2px var(--color2);
-  box-shadow: 0 0 5px 2px var(--color2);
 }
 
 /* TABLET SCREEN MAIN SECTION */
@@ -404,13 +390,8 @@ main {
     height: 230px;
   }
 
-  .explore {
+  .main-text > a {
     font-size: 10px;
-    padding: 8px 1rem;
-  }
-
-  .order {
-    font-size: 12px;
     padding: 8px 1rem;
   }
 }
