@@ -44,6 +44,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 a {
   text-decoration: none;
 }
@@ -323,28 +327,27 @@ main {
   height: inherit;
 }
 
-.main-text > button {
-  border-radius: 30px;
+.explore {
+  background-color: var(--bg4);
+  margin-right: 5px;
+  color: var(--color2);
   padding: 13px 1.5rem;
-  cursor: pointer;
+  border-radius: 25px;
+  font-size: 12px;
   -webkit-transition: 0.2s ease-in-out;
   -o-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
 }
 
-.explore {
-  background-color: var(--bg4);
-  border: transparent;
-  color: var(--color2);
-  font-weight: bolder;
-  margin-right: 5px;
-}
-
 .order {
-  border: transparent;
+  border-radius: 25px;
   background-color: var(--bg4);
   color: var(--color2);
-  font-weight: bolder;
+  padding: 13px 1.5rem;
+  font-size: 12px;
+  -webkit-transition: 0.2s ease-in-out;
+  -o-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
 .explore:hover {
@@ -363,7 +366,6 @@ main {
 @media screen and (max-width: 1000px) {
   main {
     margin-top: 3rem;
-    margin-bottom: 3rem;
   }
 
   .main-page {
@@ -395,8 +397,13 @@ main {
     height: 230px;
   }
 
-  .main-text > button {
+  .explore {
     font-size: 10px;
+    padding: 8px 1rem;
+  }
+
+  .order {
+    font-size: 12px;
     padding: 8px 1rem;
   }
 }
@@ -407,7 +414,7 @@ main {
   display: grid;
   -ms-grid-columns: 1fr 2rem 1fr 2rem 1fr;
   grid-template-columns: 1fr 1fr 1fr;
-  color: white;
+  color: var(--color1);
   margin: 5rem auto;
   width: 80vw;
   gap: 2rem;
@@ -448,9 +455,17 @@ main {
     -ms-grid-rows: auto;
     grid-template-rows: auto;
   }
-  .shop-info > *:nth-child(1) {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
+
+  .shop-info-col {
+    width: 70%;
+    margin: auto;
+  }
+}
+
+/* MOBILE SCREEN SHOP INFO PAGE */
+@media screen and (max-width: 650px) {
+  .shop-info-col {
+    width: 100%;
   }
 }
 
@@ -569,6 +584,23 @@ main {
   color: var(--color1);
 }
 
+.all-products {
+  background-color: var(--bg4);
+  color: var(--color2);
+  padding: 13px 1.5rem;
+  border-radius: 25px;
+  font-size: 12px;
+  -webkit-transition: 0.2s ease-in-out;
+  -o-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.all-products:hover {
+  background-color: var(--bg1);
+  -webkit-box-shadow: 0 0 5px 2px var(--color2);
+  box-shadow: 0 0 5px 2px var(--color2);
+}
+
 .product {
   width: 90vw;
   display: grid;
@@ -622,6 +654,21 @@ main {
   color: var(--color1);
 }
 
+/* TABLET SCREEN SHOP PAGE */
+@media screen and (max-width: 1000px) {
+  .product-col > h4 {
+    font-size: 14px;
+  }
+
+  .product-col > p {
+    font-size: 12px;
+  }
+
+  .product-col > p:nth-child(4) {
+    font-size: 10px;
+  }
+}
+
 /* MOBILE SCREEN SHOP PAGE */
 @media screen and (max-width: 650px) {
   .product {
@@ -657,7 +704,7 @@ main {
 }
 
 .review-col {
-  width: 50%;
+  width: 60%;
   color: var(--color1);
   background-color: var(--bg3);
   padding: 2em 3rem;
@@ -698,7 +745,7 @@ main {
 /* TABLET SCREEN REVIEW PAGE */
 @media screen and (max-width: 1000px) {
   .review-col {
-    width: 80%;
+    width: 70%;
   }
 
   .review-col > p {
@@ -719,6 +766,10 @@ main {
 
   .review-col > p {
     font-size: 10px;
+  }
+
+  .profile {
+    margin-top: 0.3em;
   }
 
   .profile > img {
