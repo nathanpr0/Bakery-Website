@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 @import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
 
 :root {
@@ -603,7 +610,9 @@ main {
 
 .product {
   width: 90vw;
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: auto 4rem auto 4rem auto;
   grid-template-columns: auto auto auto;
   margin: 3rem auto;
   color: var(--color2);
@@ -611,6 +620,7 @@ main {
 }
 
 .product-col {
+  -ms-grid-column-align: center;
   justify-self: center;
   line-height: 2em;
   text-align: center;
@@ -644,12 +654,15 @@ main {
   border: 2px solid var(--color2);
   border-radius: 20px;
   padding: 0.4em 2em;
+  -webkit-transition: 0.2s ease-in-out;
+  -o-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
 }
 
 .product-col > a:hover {
   background-color: var(--color3);
   border: transparent;
+  -webkit-box-shadow: 0 0 10px var(--color2);
   box-shadow: 0 0 10px var(--color2);
   color: var(--color1);
 }
@@ -672,8 +685,14 @@ main {
 /* MOBILE SCREEN SHOP PAGE */
 @media screen and (max-width: 650px) {
   .product {
+    -ms-grid-columns: unset;
     grid-template-columns: unset;
+    -ms-grid-rows: auto;
     grid-template-rows: auto;
+  }
+  .product > *:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
   }
 }
 
@@ -696,7 +715,8 @@ main {
 
 .review-container {
   width: 80vw;
-  margin: 2.2em auto;
+  margin-top: 2.2em;
+  margin-bottom: 2.2em;
 }
 
 .review-col {
@@ -713,7 +733,11 @@ main {
 }
 
 .profile {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   margin-top: 1.5em;
   gap: 1em;
@@ -722,13 +746,21 @@ main {
 .profile > img {
   height: 60px;
   width: 60px;
+  -o-object-fit: cover;
   object-fit: cover;
   border-radius: 50%;
 }
 
 .rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
 }
 
@@ -785,6 +817,8 @@ main {
 
   .rating {
     font-size: 10px;
+    -webkit-transform: translateY(10px);
+    -ms-transform: translateY(10px);
     transform: translateY(10px);
   }
 
@@ -795,6 +829,8 @@ main {
 
   .score {
     font-size: 10px;
+    -webkit-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
     transform: translateY(-15px);
   }
 }
