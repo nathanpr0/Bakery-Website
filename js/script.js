@@ -25,3 +25,28 @@ function checkResponsive() {
 
 window.addEventListener("load", checkResponsive);
 window.addEventListener("resize", checkResponsive);
+
+// SwiperJS
+const swiper = new Swiper(".swiper", {
+  grabCursor: true,
+  spaceBetween: 20, // gap between slide
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    1100: {
+      // window screen > 1100px
+      slidesPerView: 3,
+    },
+
+    700: {
+      // window screen > 700px
+      slidesPerView: 2,
+    },
+  },
+});
