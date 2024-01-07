@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Croissant Station</title>
-    <link rel="stylesheet" href="./css/style.css" />
+    <!-- FAVICON -->
     <link rel="icon" href="./images/favicon.png" />
     <!-- FONT AWESOME CDN -->
     <link
@@ -17,6 +17,9 @@
 
     <!-- Swiper JS CDN -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- STYLESHEET CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <header>
@@ -34,7 +37,7 @@
             <li><a href="#about-page">About Us</a></li>
             <li><a href="#shop-page">Our Shop</a></li>
             <li><a href="#review-page">Reviews</a></li>
-            <li><a href="">Contact Us</a></li>
+            <li><a href="#contact-us">Contact Us</a></li>
           </ul>
         </nav>
 
@@ -46,8 +49,8 @@
             <i class="fa-solid fa-cart-shopping"></i>
           </form>
         </nav>
-        <i class="fa-solid fa-bars" id="bar-menu" onclick="openMenu()"></i>
-        <i class="fa-solid fa-xmark" id="close-menu" onclick="closeMenu()"></i>
+        <i class="fa-solid fa-bars" id="bar-menu"></i>
+        <i class="fa-solid fa-xmark" id="close-menu"></i>
       </div>
 
       <!-- NAVBAR MOBILE RESPONSIVE -->
@@ -62,7 +65,7 @@
           <li><a href="#about-page">About Us</a></li>
           <li><a href="#shop-page">Our Shop</a></li>
           <li><a href="#review-page">Reviews</a></li>
-          <li><a href="">Contact Us</a></li>
+          <li><a href="#contact-us">Contact Us</a></li>
         </ul>
       </nav>
     </header>
@@ -312,6 +315,92 @@
                 </div>
               </div>
             </div>
+
+            <div class="swiper-slide review-col">
+              <p>Fruit flavors bring an unbeatable freshness. From the sweetness of strawberries to the tanginess of oranges and the tartness of blueberries, they provide a refreshing variety in every bite.</p>
+
+              <div class="profile">
+                <img src="./images/review7.jpg" alt="profile pic" />
+
+                <div class="rating">
+                  <p>Daniel Fernandes</p>
+
+                  <div class="score">
+                    <i class="fa-solid fa-star" style="color: #cd9254"></i>
+                    <i class="fa-solid fa-star" style="color: #cd9254"></i>
+                    <i class="fa-solid fa-star" style="color: #cd9254"></i>
+                    <i class="fa-solid fa-star" style="color: #cd9254"></i>
+                    <i class="fa-solid fa-star" style="color: #cd9254"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide review-col">
+              <p>
+                Experience sheer pastry perfection with these croissants—a golden-brown crust yielding to a tender, butter-infused interior. The layers delicately crumble, revealing a harmonious blend of flavors. The allure of their aroma
+                and the exquisite taste make each croissant a delectable pleasure.
+              </p>
+
+              <div class="profile">
+                <img src="./images/review8.jpg" alt="profile pic" />
+
+                <div class="rating">
+                  <p>Charlotte Martin</p>
+
+                  <div class="score">
+                    <i class="fa-solid fa-star" style="color: #cd9254"></i>
+                    <i class="fa-solid fa-star" style="color: #cd9254"></i>
+                    <i class="fa-solid fa-star" style="color: #cd9254"></i>
+                    <i class="fa-solid fa-star" style="color: #cd9254"></i>
+                    <i class="fa-solid fa-star" style="color: #cd9254"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide review-col">
+              <p>
+                Indulge in these croissants that boast a crispy shell enveloping a buttery, pillowy inside. The expertise in layering is evident from the first bite to the last crumb. Their inviting aroma and perfect blend of textures
+                create an irresistible treat that's hard to forget.
+              </p>
+
+              <div class="profile">
+                <img src="./images/review9.jpg" alt="profile pic" />
+
+                <div class="rating">
+                  <p>Lara Horvat</p>
+
+                  <div class="score">
+                    <i class="fa-solid fa-star" style="color: #cd9254"></i>
+                    <i class="fa-solid fa-star" style="color: #cd9254"></i>
+                    <i class="fa-solid fa-star" style="color: #cd9254"></i>
+                    <i class="fa-solid fa-star" style="color: #cd9254"></i>
+                    <i class="fa-solid fa-star" style="color: #cd9254"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide review-col">
+              <p>The chocolate flavor is a delightful blend of sweet and savory. Whether it's the smoothness of milk chocolate or the intense richness of dark chocolate, it delivers a tantalizing and rich indulgence</p>
+
+              <div class="profile">
+                <img src="./images/review10.jpg" alt="profile pic" />
+
+                <div class="rating">
+                  <p>Henrik Andersson</p>
+
+                  <div class="score">
+                    <i class="fa-solid fa-star" style="color: #cd9254"></i>
+                    <i class="fa-solid fa-star" style="color: #cd9254"></i>
+                    <i class="fa-solid fa-star" style="color: #cd9254"></i>
+                    <i class="fa-solid fa-star" style="color: #cd9254"></i>
+                    <i class="fa-solid fa-star" style="color: #cd9254"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="swiper-pagination"></div>
 
@@ -321,8 +410,45 @@
       </section>
     </main>
 
+    <footer>
+      <article class="contact-text" id="contact-us">
+        <h3>CONTACT US</h3>
+        <p>
+          Experience the finest in croissants at Croissant Station, where quality meets taste perfection! Delve into our array of delectable croissants and get in touch with us for placing orders or to learn more about our flavorful
+          selections.
+        </p>
+      </article>
+
+      <div class="sosmed">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-brands fa-google"></i>
+      </div>
+
+      <div class="contact-info">
+        <article>
+          <i class="fa-solid fa-location-dot"></i>
+          <p>Rue de la Paix 14, 75002 Paris, Prancis</p>
+        </article>
+
+        <article>
+          <i class="fa-solid fa-mobile"></i>
+          <p>+33 1 23 45 67 89</p>
+        </article>
+
+        <article>
+          <i class="fa-regular fa-clock"></i>
+          <p>09:00 AM - 08:00 PM</p>
+        </article>
+      </div>
+    </footer>
+
     <!-- SwiperJS Library -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- ScrollReveal Library -->
+    <script src="https://unpkg.com/scrollreveal"></script>
 
     <!-- JavaScript -->
     <script src="./js/script.js"></script>

@@ -5,11 +5,12 @@
 * Browsers: last 4 version
 */
 
-@import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto:wght@700&display=swap");
 
 :root {
   /* Custom Font */
   --font-style: Merriweather, "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  --footer-font: Roboto, "Lucida Sans", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 
   /* Custom Color */
   --color1: #f0f0f0;
@@ -22,6 +23,10 @@
   --bg2: #1c1b1a;
   --bg3: #302c28;
   --bg4: #444444;
+
+  /* Swipe JS styling */
+  --swiper-navigation-size: 25px;
+  --swiper-theme-color: var(--color2);
 }
 
 /* CUSTOM SCROLLBAR */
@@ -133,9 +138,9 @@ header {
   background-color: var(--color2);
   display: block;
   margin: 5px auto;
-  -webkit-transition: 0.4s ease-in-out;
-  -o-transition: 0.4s ease-in-out;
-  transition: 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 .navbar > ul li:hover::after {
@@ -246,9 +251,9 @@ header {
     background-color: var(--color4);
     display: block;
     margin: 0.1px auto;
-    -webkit-transition: 0.4s ease-in-out;
-    -o-transition: 0.4s ease-in-out;
-    transition: 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
   }
 
   .navmobile > ul li:hover::after {
@@ -323,9 +328,9 @@ main {
   color: var(--color2);
   padding: 13px 1.5rem;
   font-size: 12px;
-  -webkit-transition: 0.2s ease-in-out;
-  -o-transition: 0.2s ease-in-out;
-  transition: 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .main-text > a:hover {
@@ -414,9 +419,9 @@ main {
   border: 2px dotted var(--color2);
   border-radius: 35px;
   padding: 2rem;
-  -webkit-transition: 0.2s ease-in-out;
-  -o-transition: 0.2s ease-in-out;
-  transition: 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .shop-info-col:hover {
@@ -578,9 +583,9 @@ main {
   padding: 13px 1.5rem;
   border-radius: 25px;
   font-size: 12px;
-  -webkit-transition: 0.2s ease-in-out;
-  -o-transition: 0.2s ease-in-out;
-  transition: 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .all-products:hover {
@@ -635,9 +640,9 @@ main {
   border: 2px solid var(--color2);
   border-radius: 20px;
   padding: 0.4em 2em;
-  -webkit-transition: 0.2s ease-in-out;
-  -o-transition: 0.2s ease-in-out;
-  transition: 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .product-col > a:hover {
@@ -757,14 +762,6 @@ main {
   height: 12px;
 }
 
-.swiper-button-prev {
-  color: var(--color2) !important;
-}
-
-.swiper-button-next {
-  color: var(--color2) !important;
-}
-
 /* TABLET SCREEN REVIEW PAGE */
 @media screen and (max-width: 1000px) {
   .review-col > p {
@@ -781,10 +778,6 @@ main {
 @media screen and (max-width: 650px) {
   .review-col {
     width: 100%;
-  }
-
-  .review-col > p {
-    font-size: 10px;
   }
 
   .profile {
@@ -804,14 +797,116 @@ main {
   }
 
   .rating > p {
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 600;
   }
 
   .score {
-    font-size: 10px;
+    font-size: 12px;
     -webkit-transform: translateY(-15px);
     -ms-transform: translateY(-15px);
     transform: translateY(-15px);
+  }
+
+  .swiper-pagination .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+/* CONTACT US FOOTER */
+footer {
+  background-color: var(--bg2);
+  padding: 0 2rem 4rem 2rem;
+}
+
+.contact-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 70%;
+  margin: auto;
+  gap: 0.5em;
+  text-align: center;
+}
+
+.contact-text > h3 {
+  color: var(--color2);
+  font-family: var(--footer-font);
+}
+
+.contact-text > p {
+  color: var(--color1);
+  font-size: 13px;
+}
+
+.sosmed {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.5em;
+  column-gap: 2em;
+}
+
+.sosmed > i {
+  font-size: 1.65rem;
+  color: var(--color3);
+  transition: all 0.2s ease-in-out;
+}
+
+.sosmed > i:hover {
+  color: var(--color1);
+}
+
+.contact-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 2em;
+  margin-top: 2em;
+}
+
+.contact-info > article {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: var(--color2);
+  column-gap: 0.5em;
+}
+
+.contact-info > article > i {
+  color: var(--color3);
+}
+
+.contact-info > article > p {
+  font-size: 12px;
+}
+
+.contact-info > article:nth-child(3) > p {
+  color: var(--color1);
+}
+
+/* TABLET SCREEN CONTACT US FOOTER */
+@media screen and (max-width: 1000px) {
+  .contact-text {
+    width: 90%;
+  }
+}
+
+/* MOBILE SCREEN CONTACT US FOOTER */
+@media screen and (max-width: 650px) {
+  .contact-text > p {
+    font-size: 11px;
+  }
+
+  .sosmed > i {
+    font-size: 1.3rem;
+  }
+
+  .contact-info {
+    flex-direction: column;
+    column-gap: unset;
+    row-gap: 0.5em;
   }
 }
