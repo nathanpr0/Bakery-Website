@@ -93,4 +93,5 @@ scroll("right", false, ".about-container > figure", 400);
 scroll("left", false, ".about-container > article", 400);
 scroll("bottom", false, ".shop", 300);
 scroll("top", false, ".review", 300);
+scroll("bottom", false, ".review-container", 400);
 scroll("top", false, "footer", 300);
