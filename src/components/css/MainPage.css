@@ -1,0 +1,121 @@
+/* MAIN SECTION */
+main {
+  margin-top: 4rem;
+  width: 100vw;
+}
+
+.main-page {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 80vw;
+  color: white;
+  gap: 2rem;
+}
+
+.main-text > h3 {
+  font-size: 2.45rem;
+  color: var(--color2);
+  margin-bottom: 1rem;
+}
+
+.main-text > p {
+  line-height: 2rem;
+}
+
+.main-text > a {
+  border-radius: 25px;
+  background-color: var(--bg4);
+  color: var(--color2);
+  padding: 13px 1.5rem;
+  font-size: 12px;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.main-text > a:hover {
+  background-color: var(--bg1);
+  -webkit-box-shadow: 0 0 5px 2px var(--color2);
+  box-shadow: 0 0 5px 2px var(--color2);
+}
+
+.explore {
+  margin-right: 5px;
+}
+
+.main-img {
+  -webkit-clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  background-color: var(--color2);
+  height: 350px;
+}
+
+.main-img img {
+  -webkit-clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  -webkit-transform: translateY(5px) scale(0.95);
+  -ms-transform: translateY(5px) scale(0.95);
+  transform: translateY(5px) scale(0.95);
+  z-index: 1;
+  height: inherit;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+/* TABLET SCREEN MAIN SECTION */
+@media screen and (max-width: 1000px) {
+  main {
+    margin-top: 3rem;
+  }
+
+  .main-page {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .main-text > h3 {
+    font-size: 2rem;
+  }
+
+  .main-text > p {
+    font-size: 0.9rem;
+  }
+
+  .main-img {
+    height: 420px;
+    margin-top: 3rem;
+  }
+}
+
+/* MOBILE SCREEN MAIN SECTION */
+@media screen and (max-width: 650px) {
+  .main-page {
+    gap: initial;
+  }
+
+  .main-img {
+    height: 230px;
+  }
+
+  .main-img img {
+    -webkit-transform: translateY(2px) scale(0.98);
+    -ms-transform: translateY(2px) scale(0.98);
+    transform: translateY(2px) scale(0.98);
+  }
+
+  .main-text > a {
+    font-size: 10px;
+    padding: 8px 1rem;
+  }
+}

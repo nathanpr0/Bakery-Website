@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto:wght@700&display=swap");
+
+:root {
+  /* Custom Font */
+  --font-style: Merriweather, "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  --footer-font: Roboto, "Lucida Sans", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+
+  /* Custom Color */
+  --color1: #f0f0f0;
+  --color2: #f9b66d;
+  --color3: #cd9254;
+  --color4: #2c2c2c;
+
+  /* Custom Background Color */
+  --bg1: #252525;
+  --bg2: #1c1b1a;
+  --bg3: #302c28;
+  --bg4: #444444;
+
+  /* Swipe JS styling */
+  --swiper-navigation-size: 25px;
+  --swiper-theme-color: var(--color2);
+}
+
+/* CUSTOM SCROLLBAR */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: black;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--color3);
+  border-radius: 25px;
+}
+
+::-webkit-scrollbar-corner {
+  display: none;
+}
+
+/* RESET */
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+i {
+  cursor: pointer;
+}
+
+body {
+  background-color: var(--bg1);
+  font-family: var(--font-style);
+}

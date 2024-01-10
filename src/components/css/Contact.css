@@ -1,0 +1,96 @@
+/* CONTACT US FOOTER */
+footer {
+  background-color: var(--bg2);
+  padding: 0 2rem 4rem 2rem;
+}
+
+.contact-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 70%;
+  margin: auto;
+  gap: 0.5em;
+  text-align: center;
+}
+
+.contact-text > h3 {
+  color: var(--color2);
+  font-family: var(--footer-font);
+}
+
+.contact-text > p {
+  color: var(--color1);
+  font-size: 13px;
+}
+
+.sosmed {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.5em;
+  column-gap: 2em;
+}
+
+.sosmed > i {
+  font-size: 1.65rem;
+  color: var(--color3);
+  transition: all 0.2s ease-in-out;
+}
+
+.sosmed > i:hover {
+  color: var(--color1);
+}
+
+.contact-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 2em;
+  margin-top: 2em;
+}
+
+.contact-info > article {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: var(--color2);
+  column-gap: 0.5em;
+}
+
+.contact-info > article > i {
+  color: var(--color3);
+}
+
+.contact-info > article > p {
+  font-size: 12px;
+}
+
+.contact-info > article:nth-child(3) > p {
+  color: var(--color1);
+}
+
+/* TABLET SCREEN CONTACT US FOOTER */
+@media screen and (max-width: 1000px) {
+  .contact-text {
+    width: 90%;
+  }
+}
+
+/* MOBILE SCREEN CONTACT US FOOTER */
+@media screen and (max-width: 650px) {
+  .contact-text > p {
+    font-size: 11px;
+  }
+
+  .sosmed > i {
+    font-size: 1.3rem;
+  }
+
+  .contact-info {
+    flex-direction: column;
+    column-gap: unset;
+    row-gap: 0.5em;
+  }
+}
