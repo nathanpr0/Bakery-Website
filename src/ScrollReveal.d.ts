@@ -1,2 +1,1 @@
-// scrollreveal.d.ts
-declare let ScrollReveal;
+declare module "scrollreveal";

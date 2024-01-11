@@ -7,8 +7,9 @@ import { Review } from "./components/ts/Review";
 import Contact from "./components/ts/Contact";
 import "./App.css";
 
-// Import useEffect for re-rendering ScrollReveal Effect
+// Import ScrollReveal Library & useEffect for re-rendering ScrollReveal Effect
 import { useEffect } from "react";
+import ScrollReveal from "scrollreveal";
 
 function App() {
   // Scroll Reveal Effect
